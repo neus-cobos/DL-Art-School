@@ -26,13 +26,13 @@ datasets:
     conditioning_length: 44000
     use_bpe_tokenizer: True
     load_aligned_codes: False
-    tokenizer_vocab: ../custom_language_tokenizer.json
+    tokenizer_vocab: ../../custom_language_tokenizer.json
   val:
     name: val_dataset
     n_workers: 1
     batch_size: 64 # this could be higher probably
     mode: paired_voice_audio
-    path: ../dataset/val.txt
+    path: ../../dataset/val.txt
     fetcher_mode: ['lj']
     phase: val # might be broken idk
     max_wav_length: 255995
@@ -43,7 +43,7 @@ datasets:
     conditioning_length: 44000
     use_bpe_tokenizer: True
     load_aligned_codes: False
-    tokenizer_vocab: ../custom_language_tokenizer.json
+    tokenizer_vocab: ../../custom_language_tokenizer.json
 
 steps:        
   gpt_train:
